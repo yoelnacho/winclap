@@ -1,0 +1,13 @@
+{
+  "name": "winclap",
+  "description": "Test / Front-End developer",
+  "main": "",
+  "authors": [
+    "yoelnacho <yoelnacho@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "https://yoelnacho.github.io/winclap"
+}
