@@ -10,7 +10,8 @@
     "node"
   ],
   "homepage": "https://yoelnacho.github.io/winclap",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "bootstrap-sass": "~3.3.7"
   }
 }
