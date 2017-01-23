@@ -9,5 +9,8 @@
   "moduleType": [
     "node"
   ],
-  "homepage": "https://yoelnacho.github.io/winclap"
+  "homepage": "https://yoelnacho.github.io/winclap",
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.7"
+  }
 }
