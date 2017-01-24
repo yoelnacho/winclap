@@ -1,0 +1,25 @@
+/* -----------------------------------------------
+    Nav
+--------------------------------------------------
+
+var
+
+-------------------------------------------------- */
+
+.nav-top {
+    @extend %ui-text-right;
+    @extend %ui-padding-sm;
+
+    position: fixed;
+    right: 0;
+
+    > a {
+        color: palette(gray, 30);
+        display: inline-block;
+        text-align: right;
+
+        @include mq('tablet', max) {
+            color: palette(gray, 30);
+        }
+    }
+}

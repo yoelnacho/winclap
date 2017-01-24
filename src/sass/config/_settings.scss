@@ -1,0 +1,42 @@
+/* -----------------------------------------------
+    Settings
+--------------------------------------------------
+
+// var
+
+-------------------------------------------------- */
+
+// Breakpoint
+$breakpoints: (
+    "phone":          400px,
+    "phone-wide":     480px,
+    "phablet":        560px,
+    "tablet-small":   640px,
+    "tablet":         768px,
+    "tablet-wide":    1024px,
+    "desktop":        1200px,
+    "desktop-wide":   1500px,
+    "desktop-wide-m": 1520px
+);
+
+// Sizes
+$size-xs:                       10px;
+$size-sm:                       20px;
+$size-md:                       40px;
+$size-lg:                       60px;
+
+$height-xs:                     $size-xs;
+$height-sm:                     $size-sm;
+$height-md:                     $size-md;
+$height-lg:                     $size-lg;
+
+// color
+$color-primary:                palette(gray, 30);
+$color-secondary:              palette(gray);
+$color-brand:                  palette(blue);
+
+// Logo
+$logo-iso:                     $size-lg;
+
+// Z-index
+$z-xs:                         1;

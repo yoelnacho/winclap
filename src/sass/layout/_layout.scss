@@ -1,0 +1,33 @@
+/* -----------------------------------------------
+    Layout
+
+-------------------------------------------------- */
+
+[data-layout] {
+    @extend %ui-full-width;
+    @extend %ui-overflow;
+
+    &:not([data-layout~="no-margin"]) {
+        @include center(breakpoint('desktop-wide-m'), $size-xs);
+    }
+}
+
+[data-layout~="no-margin"] {
+    @include center(breakpoint('desktop-wide'));
+}
+
+[data-layout~="pad-sm"] {
+    @extend %ui-padding-sm;
+}
+
+[data-layout~="pad-sm"] {
+    @extend %ui-padding-sm;
+}
+
+[data-layout~="pad-md"] {
+    @extend %ui-padding-md;
+}
+
+[data-layout~="pad-lg"] {
+    @extend %ui-padding-lg;
+}

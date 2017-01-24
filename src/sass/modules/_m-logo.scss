@@ -1,0 +1,14 @@
+/* -----------------------------------------------
+    Logotipo
+-------------------------------------------------- */
+
+.m-logo {
+    @extend %ui-margin-vertical-sm;
+
+    font-size: 0;
+    max-width: 360px;
+
+    > img {
+        @extend %ui-full-maxwidth;
+    }
+}

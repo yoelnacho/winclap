@@ -2,12 +2,16 @@
    Styles
 ------------------------------- */
 
+
+// ----------------------------------- Bootstrap
 @import "./bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
-body {
-    background-color: #333333;
-}
-
-h1 {
-    color: white;
-}
+// ----------------------------------- Config
+@import "sass/config/common";
+// ----------------------------------- Layout
+@import "sass/layout/main",
+        "sass/layout/nav",
+        "sass/layout/layout";
+// ----------------------------------- Modules
+@import "sass/modules/loader",
+        "sass/modules/m-logo";

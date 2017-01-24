@@ -1,0 +1,53 @@
+/* -----------------------------------------------
+    Fonts
+-------------------------------------------------- */
+
+
+// Thin:    100
+// Light:   300
+// Regular: 400
+// Medium:  500
+// Bold:    700
+
+%headline1,
+.headline1 {
+    font: {
+        size: torem(48px);
+        weight: 100;
+    }
+}
+%headline2,
+.headline2 {
+    font: {
+        size: torem(32px);
+        weight: 300;
+    }
+}
+%headline3,
+.headline3 {
+    font: {
+        size: torem(26px);
+        weight: 400;
+    }
+}
+%headline4,
+.headline4 {
+    font: {
+        size: torem(20px);
+        weight: 400;
+    }
+}
+%headline5,
+.headline5 {
+    font: {
+        size: torem(18px);
+        weight: 400;
+    }
+}
+%headline6,
+.headline6 {
+    font: {
+        size: torem(16px);
+        weight: 400;
+    }
+}

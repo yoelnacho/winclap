@@ -1,0 +1,19 @@
+/* -----------------------------------------------
+    Functions
+-------------------------------------------------- */
+
+// TO REM --- torem(48)
+@function torem($target, $context: $font-base-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0rem;
+}
+
+// COLORS --- palette(gray) // palette(gray, 30);
+@function palette($palette, $tone: 100) {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
+
+// BREAKPOINT --- breakpoint('desktop');
+@function breakpoint($breakpoint) {
+    @return map-get($breakpoints, $breakpoint);
+}

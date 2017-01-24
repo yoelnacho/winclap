@@ -1,0 +1,36 @@
+/* -----------------------------------------------
+    Palette
+-------------------------------------------------- */
+
+// use expample: color: palettes(white);
+$palettes:(
+    default: (
+        dark:             #000000,
+        light:            #FFFFFF,
+    ),
+    system: (
+        error:            red,
+        warning:          yellow,
+        success:          green,
+    ),
+    gray: (
+        100:              #1E1E1E,
+        70:               #3B3B3B,
+        30:               #EDEEF0,
+    ),
+    blue: (
+        100:              #003354,
+        70:               #4c7087,
+        30:               #b2c1cb,
+    ),
+    light-blue: (
+        100:              #91bed4,
+        70:               #b2d1e1,
+        30:               #deebf2,
+    ),
+    orange: (
+        100:              #f26101,
+        70:               #f6904d,
+        30:               #fbcfb2,
+    )
+);

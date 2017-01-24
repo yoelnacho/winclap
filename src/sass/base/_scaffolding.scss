@@ -1,0 +1,22 @@
+/* -----------------------------------------------
+    Scaffolding
+--------------------------------------------------
+
+var
+
+-------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    @extend %ui-full-height;
+
+    background-color: palette(blue, 30);
+    font: {
+        family: $font-primary;
+        size: $font-base-size;
+    }
+}
