@@ -12,6 +12,7 @@
   "homepage": "https://yoelnacho.github.io/winclap",
   "devDependencies": {},
   "dependencies": {
-    "bootstrap-sass": "~3.3.7"
+    "bootstrap-sass": "~3.3.7",
+    "animate.css": "~3.5.2"
   }
 }

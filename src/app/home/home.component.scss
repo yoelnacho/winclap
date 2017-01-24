@@ -1,0 +1,47 @@
+/* -----------------------------------------------
+    Home
+-------------------------------------------------- */
+
+@import "../../sass/config/common";
+
+.home {
+    &-first {
+        @extend %ui-relative;
+
+        background: {
+            repeat: no-repeat;
+            color: transparent;
+            image: url('assets/img/bg/performance-advertisers.jpg');
+            size: cover;
+        }
+        min-height: 100vh;
+
+        &:after {
+            @extend %ui-absolute;
+            @extend %ui-absolute-full;
+
+            content: '';
+            background-color: rgba(palette(default, dark), 0.5);
+            z-index: 0;
+        }
+
+        > * {
+            @extend %ui-relative;
+
+            z-index: 1;
+        }
+    }
+}
+
+.section {
+    &-secondary {
+        background-color: palette(gray);
+        color: palette(default, light);
+    }
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    max-width: 850px;
+}
