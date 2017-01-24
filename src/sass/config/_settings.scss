@@ -1,22 +1,18 @@
 /* -----------------------------------------------
     Settings
---------------------------------------------------
-
-// var
-
 -------------------------------------------------- */
+
+/*
+Extra small devices    Small devices       Medium devices      Large devices
+Phone (<480px)        Tablet (≥768px)    Desktop (≥1024px)   Desktop-wide (≥1200px)
+*/
 
 // Breakpoint
 $breakpoints: (
-    "phone":          400px,
-    "phone-wide":     480px,
-    "phablet":        560px,
-    "tablet-small":   640px,
+    "phone":          480px,
     "tablet":         768px,
-    "tablet-wide":    1024px,
-    "desktop":        1200px,
-    "desktop-wide":   1500px,
-    "desktop-wide-m": 1520px
+    "desktop":        1024px,
+    "desktop-wide":   1200px
 );
 
 // Sizes
@@ -31,9 +27,9 @@ $height-md:                     $size-md;
 $height-lg:                     $size-lg;
 
 // color
-$color-primary:                palette(gray, 30);
+$color-primary:                palette(default, light);
 $color-secondary:              palette(gray);
-$color-brand:                  palette(blue);
+$color-brand:                  palette(default, light);
 
 // Logo
 $logo-iso:                     $size-lg;

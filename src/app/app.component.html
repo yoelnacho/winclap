@@ -1,9 +1,11 @@
 <header>
     <a routerLink="/home" routerLinkActive="active"></a>
 </header>
+
 <main>
     <router-outlet></router-outlet>
 </main>
-<footer>
-    <p [innerHTML]="'<b>'+footer+'</b>'"></p>
+
+<footer role="footer">
+    <p [innerHTML]="'Winclap &copy; <strong>'+footer+'</strong>'"></p>
 </footer>

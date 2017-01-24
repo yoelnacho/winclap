@@ -8,8 +8,8 @@
    @return $target / $context + 0rem;
 }
 
-// COLORS --- palette(gray) // palette(gray, 30);
-@function palette($palette, $tone: 100) {
+// COLORS --- palette(gray) // palette(gray, light);
+@function palette($palette, $tone: default) {
     @return map-get(map-get($palettes, $palette), $tone);
 }
 

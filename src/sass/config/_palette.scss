@@ -14,23 +14,15 @@ $palettes:(
         success:          green,
     ),
     gray: (
-        100:              #1E1E1E,
-        70:               #3B3B3B,
-        30:               #EDEEF0,
+        default:          #333333,
+        light:            #3C3C3C,
     ),
-    blue: (
-        100:              #003354,
-        70:               #4c7087,
-        30:               #b2c1cb,
-    ),
-    light-blue: (
-        100:              #91bed4,
-        70:               #b2d1e1,
-        30:               #deebf2,
-    ),
-    orange: (
-        100:              #f26101,
-        70:               #f6904d,
-        30:               #fbcfb2,
+    colors: (
+        violet:           #682D81,
+        red:              #E8533C,
+        orange:           #EE8309,
+        green:            #89CA4B,
+        dark-green:       #089E77,
+        turquoise:        #34C3C4,
     )
 );

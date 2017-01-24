@@ -1,6 +1,5 @@
 /* -----------------------------------------------
     Layout
-
 -------------------------------------------------- */
 
 [data-layout] {
@@ -8,12 +7,12 @@
     @extend %ui-overflow;
 
     &:not([data-layout~="no-margin"]) {
-        @include center(breakpoint('desktop-wide-m'), $size-xs);
+        @include center(breakpoint('desktop'), $size-xs);
     }
 }
 
 [data-layout~="no-margin"] {
-    @include center(breakpoint('desktop-wide'));
+    @include center(breakpoint('desktop'));
 }
 
 [data-layout~="pad-sm"] {

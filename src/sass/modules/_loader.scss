@@ -1,9 +1,13 @@
+/* -----------------------------------------------
+    Loader
+-------------------------------------------------- */
+
 .m-loader {
     &-container {
         @include vertical-align();
     }
 
-    color: palette(gray, 30);
+    color: palette(gray);
     font-size: $size-lg;
     text-indent: -9999em;
     overflow: hidden;

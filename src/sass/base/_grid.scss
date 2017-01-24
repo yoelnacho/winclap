@@ -2,7 +2,7 @@
     Grid
 --------------------------------------------------
 // Edit
-@include edit(red);
+@include edit(tomato);
 -------------------------------------------------- */
 
 [data-grid] {
@@ -15,15 +15,6 @@
 
 [data-grid~="row"]{
     @include cf();
-}
-
-[data-grid~="1"]{
-    @include col(1/12);
-
-
-    &[data-grid~="span"]{
-        @include span(1/12);
-    }
 }
 
 [data-grid~="25"]{

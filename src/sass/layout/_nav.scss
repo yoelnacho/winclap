@@ -1,9 +1,5 @@
 /* -----------------------------------------------
     Nav
---------------------------------------------------
-
-var
-
 -------------------------------------------------- */
 
 .nav-top {
@@ -14,12 +10,8 @@ var
     right: 0;
 
     > a {
-        color: palette(gray, 30);
+        color: palette(default, light);
         display: inline-block;
         text-align: right;
-
-        @include mq('tablet', max) {
-            color: palette(gray, 30);
-        }
     }
 }
