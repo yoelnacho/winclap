@@ -7,8 +7,9 @@ import { HttpModule } from '@angular/http';
 import { routes } from './app.router';
 
 // Jquery
-import { JqueryComponent } from './jquery/jquery.component';
-import { RotateComponent } from './jquery/rotate.component';
+import { JqueryComponent } from './jquery/jquery/jquery.component';
+import { RotateComponent } from './jquery/rotate/rotate.component';
+import { ParallaxComponent } from './jquery/parallax/parallax.component';
 
 // Pages
 import { AppComponent } from './app.component';
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     HomeComponent,
     JqueryComponent,
-    RotateComponent
+    RotateComponent,
+    ParallaxComponent
   ],
   imports: [
     BrowserModule,

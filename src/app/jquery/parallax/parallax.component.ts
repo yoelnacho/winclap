@@ -2,31 +2,21 @@ import { Component, OnInit, ElementRef, Input } from '@angular/core';
 declare var $: any;
 
 @Component({
-    selector: 'jquery',
-    template: '<button>{{ text }}</button>'
+    selector: 'parallax',
+    templateUrl: './parallax.component.html',
+    styleUrls: ['./parallax.component.scss']
 })
 
-export class JqueryComponent implements OnInit {
-
-    // recibo el mediante el atributo data el valor que envía desde el html
-    @Input('data') text: string;
+export class ParallaxComponent implements OnInit {
 
     constructor(private _elmRef: ElementRef) { }
 
-    ngOnInit() {
-        $(this._elmRef.nativeElement)
-            .find('button')
-            .on('click', function(){
-                console.log('Wasaaaaaa...');
-            }
-        );
+    ngOnInit() {}
 
-        // Parallax effect
-        $(document).ready(function() {
-            if ($("#js-parallax-window").length) {
-                parallax();
-            }
-        });
+    ngAfterViewInit() {
+        if ($("#js-parallax-window").length) {
+            parallax();
+        }
 
         $(window).scroll(function(e) {
             if ($("#js-parallax-window").length) {
@@ -52,8 +42,5 @@ export class JqueryComponent implements OnInit {
                 plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
             }
         }
-    }
-
-    ngAfterViewInit() {
     }
 }

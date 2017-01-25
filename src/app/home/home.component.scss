@@ -3,12 +3,13 @@
 -------------------------------------------------- */
 
 @import "../../sass/config/common";
-@import "../../sass/libs/rotate/simpletextrotator";
+@import "../../sass/libs/rotate/index";
 
 .home {
     &-first {
         @extend %ui-relative;
-
+        @extend %ui-text-center;
+        
         background: {
             repeat: no-repeat;
             color: transparent;
@@ -32,6 +33,13 @@
 
             z-index: 1;
         }
+
+        &-wrapper {
+            @include v-align;
+
+            min-height: 100vh;
+        }
+
     }
 }
 
@@ -46,34 +54,4 @@ canvas {
     width: 100%;
     height: auto;
     max-width: 850px;
-}
-
-$parallax-window-height: 30em;
-$parallax-background-height: $parallax-window-height * 2;
-
-.parallax-window {
-    max-height: $parallax-window-height;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.parallax-static-content {
-    color: #9A9A8A;
-    padding: 8em 0;
-    position: relative;
-    z-index: 9;
-}
-
-.parallax-background {
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
-    background-position: top;
-    background-size: cover;
-    background-color: beige;
-    height: $parallax-background-height;
-    left: 0;
-    position: absolute;
-    top: - $parallax-window-height / 3;
-    width: 100%;
 }
