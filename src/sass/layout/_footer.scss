@@ -3,7 +3,7 @@
 -------------------------------------------------- */
 
 [role='footer'] {
-    @include font-source(16px, 500, 2);
+    @include font-source(null, $font-base-size, 500, 2.5);
     @extend %ui-text-center;
     @extend %ui-overflow;
 }

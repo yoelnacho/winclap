@@ -2,52 +2,30 @@
     Fonts
 -------------------------------------------------- */
 
+// primary:   Catamaran: 300,400,500,700
+// secondary: Oswald: 300,400,700
+// tertiary:  Roboto
 
-// Thin:    100
-// Light:   300
-// Regular: 400
-// Medium:  500
-// Bold:    700
 
-%headline1,
-.headline1 {
-    font: {
-        size: torem(48px);
-        weight: 100;
-    }
+%headline-1,
+.headline-1 {
+    @include font-source(null, torem(60px), 500);
 }
-%headline2,
-.headline2 {
-    font: {
-        size: torem(32px);
-        weight: 300;
-    }
+%headline-2,
+.headline-2 {
+    @include font-source(null, torem(48px), 500);
 }
-%headline3,
-.headline3 {
-    font: {
-        size: torem(26px);
-        weight: 400;
-    }
+%headline-3,
+.headline-3 {
+    @include font-source(null, torem(40px), 500);
 }
-%headline4,
-.headline4 {
-    font: {
-        size: torem(20px);
-        weight: 400;
-    }
+%headline-4,
+.headline-4 {
 }
-%headline5,
-.headline5 {
-    font: {
-        size: torem(18px);
-        weight: 400;
-    }
+%headline-5,
+.headline-5 {
 }
-%headline6,
-.headline6 {
-    font: {
-        size: torem(16px);
-        weight: 400;
-    }
+%headline-6,
+.headline-6 {
+    @include font-source(null, $font-base-size, 300);
 }

@@ -2,8 +2,8 @@
     Helpers
 -------------------------------------------------- */
 
-.brand,
-a.brand {
+.c-brand,
+a.c-brand {
     color: $color-brand;
 }
 
@@ -21,12 +21,20 @@ a.c-secondary {
 .truncate {
     @include truncate;
 }
-.no-truncate {
-    white-space: normal;
-}
 
-%block-mh100 {
-    @extend %ui-full-minheight;
+// Overlay
+%overlay {
+    &:after {
+        @extend %ui-absolute;
+        @extend %ui-absolute-full;
 
-    display: block;
+        content: '';
+        z-index: 0;
+    }
+
+    > * {
+        @extend %ui-relative;
+
+        z-index: $z-xs;
+    }
 }

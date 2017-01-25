@@ -1,0 +1,24 @@
+/* -----------------------------------------------
+    Button
+-------------------------------------------------- */
+
+[data-btn]{
+    @extend %headline-6;
+    @extend %ui-padding-horizontal-xs;
+
+    background-color: transparent;
+}
+
+[data-btn~="primary"]{
+    @include font-source(null, $font-base-size, 500, 2);
+
+    color: palette(default, light);
+
+    &[data-btn~="border"]{
+        border: 1px solid palette(default, light);
+        border-radius: 15px;
+    }
+}
+[data-btn~="secondary"]{
+    color: palette(gray);
+}

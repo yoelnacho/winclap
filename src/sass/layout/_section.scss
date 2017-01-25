@@ -1,0 +1,20 @@
+/* -----------------------------------------------
+    Sections
+-------------------------------------------------- */
+
+.section {
+    &-primary {
+        background-color: palette(default, light);
+        color: palette(gray);
+    }
+
+    &-secondary {
+        background-color: palette(gray);
+        color: palette(default, light);
+    }
+
+    &-tertiary {
+        background-color: palette(gray, light);
+        color: palette(default, light);
+    }
+}

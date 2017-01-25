@@ -9,7 +9,9 @@
     &-first {
         @extend %ui-relative;
         @extend %ui-text-center;
-        
+        @extend %overlay;
+        @extend %ui-full-minheight-vh;
+
         background: {
             repeat: no-repeat;
             color: transparent;
@@ -17,39 +19,55 @@
             image: url('assets/img/bg/performance-advertisers.jpg');
             size: cover;
         }
-        min-height: 100vh;
 
         &:after {
-            @extend %ui-absolute;
-            @extend %ui-absolute-full;
-
-            content: '';
-            background-color: rgba(palette(default, dark), 0.6);
-            z-index: 0;
+            background: -webkit-linear-gradient(left,
+                        rgba(238,131,8,0.5) 0%,
+                        rgba(137,202,64,0.5) 33%,
+                        rgba(51,195,196,0.5) 66%,
+                        rgba(51,195,196,0.5) 100%);
+            background: linear-gradient(to right,
+                        rgba(238,131,8,0.5) 0%,
+                        rgba(137,202,64,0.5) 33%,
+                        rgba(51,195,196,0.5) 66%,
+                        rgba(51,195,196,0.5) 100%);
         }
 
-        > * {
-            @extend %ui-relative;
-
-            z-index: 1;
+        [data-btn] {
+            @extend %ui-absolute;
+            top: $size-sm;
+            right: $size-sm;
         }
 
         &-wrapper {
             @include v-align;
+            @extend %ui-full-minheight-vh;
 
-            min-height: 100vh;
+            text-shadow: 0px 0px 1px rgba(palette(default, dark), 0.4);
         }
+    }
 
+    &-map {
+        &-img {
+            @include aspect-ratio(16,6);
+            @extend %ui-overflow;
+
+            max-height: 380px;
+
+            figure {
+                @extend %ui-absolute;
+                @extend %ui-absolute-full;
+
+                > img {
+                    @include vertical-align;
+                    @extend %ui-full-maxwidth;
+                }
+            }
+        }
     }
 }
 
-.section {
-    &-secondary {
-        background-color: palette(gray);
-        color: palette(default, light);
-    }
-}
-
+// Modules
 canvas {
     width: 100%;
     height: auto;

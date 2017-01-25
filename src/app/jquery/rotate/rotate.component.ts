@@ -1,14 +1,14 @@
-import { Component, AfterViewInit, ElementRef, Input } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 declare var $: any;
 
 @Component({
     selector: 'rotate',
-    template: '<h3 class="headline2">[ <span class="js-rotate">Rewards, Performance, Video</span> ]</h3>'
+    template: '<span class="js-rotate">Rewards, Performance, Video</span>'
 })
 
 export class RotateComponent implements AfterViewInit {
 
-    constructor(private _elmRef: ElementRef) { }
+    constructor() { }
 
     ngAfterViewInit() {
         $(".js-rotate").textrotator({

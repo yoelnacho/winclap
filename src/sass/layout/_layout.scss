@@ -16,17 +16,17 @@
 }
 
 [data-layout~="pad-sm"] {
-    @extend %ui-padding-sm;
+    @extend %ui-padding-vertical-sm;
 }
 
 [data-layout~="pad-sm"] {
-    @extend %ui-padding-sm;
+    @extend %ui-padding-vertical-sm;
 }
 
 [data-layout~="pad-md"] {
-    @extend %ui-padding-md;
+    @extend %ui-padding-vertical-md;
 }
 
 [data-layout~="pad-lg"] {
-    @extend %ui-padding-lg;
+    @extend %ui-padding-vertical-lg;
 }

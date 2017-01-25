@@ -112,8 +112,8 @@
 
 // Fonts
 // @include font-source(16px, 500, 1);
-@mixin font-source($size: false, $weight: false,  $lh: false, $colour: false) {
-    font-family: $font-primary;
+@mixin font-source($family: $font-primary,$size: false, $weight: false, $lh: false, $colour: false) {
+    font-family: $family;
     @if $size { font-size: $size; }
     @if $weight { font-weight: $weight; }
     @if $lh { line-height: $lh; }
