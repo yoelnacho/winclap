@@ -43,7 +43,7 @@
             @include v-align;
             @extend %ui-full-minheight-vh;
 
-            text-shadow: 0px 0px 1px rgba(palette(default, dark), 0.4);
+            text-shadow: 1px 1px 1px rgba(palette(default, dark), 0.4);
         }
     }
 

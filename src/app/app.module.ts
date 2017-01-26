@@ -14,6 +14,8 @@ import { ParallaxComponent } from './jquery/parallax/parallax.component';
 // Pages
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { HowComponent } from './how/how.component';
+import { PerformanceComponent } from './performance/performance.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HomeComponent } from './home/home.component';
     HomeComponent,
     JqueryComponent,
     RotateComponent,
-    ParallaxComponent
+    ParallaxComponent,
+    HowComponent,
+    PerformanceComponent
   ],
   imports: [
     BrowserModule,

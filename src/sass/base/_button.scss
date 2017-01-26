@@ -4,9 +4,14 @@
 
 [data-btn]{
     @extend %headline-6;
-    @extend %ui-padding-horizontal-xs;
 
     background-color: transparent;
+    padding: {
+        top: 3px;
+        bottom: 3px;
+        left: $size-xs;
+        right: $size-xs;
+    }
 }
 
 [data-btn~="primary"]{
