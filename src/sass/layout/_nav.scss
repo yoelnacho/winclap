@@ -2,16 +2,21 @@
     Nav
 -------------------------------------------------- */
 
-.nav-top {
-    @extend %ui-text-right;
-    @extend %ui-padding-sm;
-
-    position: fixed;
-    right: 0;
+.nav {
+    @extend %ui-padding-vertical-sm;
 
     > a {
         color: palette(default, light);
-        display: inline-block;
-        text-align: right;
+    }
+
+    &-top {
+        @extend %ui-text-right;
+
+        @include mq('tablet', max) {
+            text-align: center;
+        }
+    }
+
+    &-middle {
     }
 }

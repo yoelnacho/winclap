@@ -1,11 +1,10 @@
 /* -----------------------------------------------
-    Rotate
+    Banner
 -------------------------------------------------- */
 
-.m-rotate {
-    @extend %headline-3;
+[role="banner"] {
+    @extend %ui-absolute;
+    @extend %ui-full-width;
 
-    span {
-        text-transform: uppercase;
-    }
+    z-index: $z-sm;
 }

@@ -1,30 +1,56 @@
+@import "../../../sass/config/common";
 
 $parallax-window-height: 30em;
 $parallax-background-height: $parallax-window-height * 2;
 
-.parallax-window {
-    max-height: $parallax-window-height;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
+.parallax {
+    &-window {
+        @extend %ui-full-width;
+        @extend %ui-overflow;
+        @extend %ui-relative;
+        @extend %ui-text-center;
 
-.parallax-static-content {
-    color: #9A9A8A;
-    padding: 8em 0;
-    position: relative;
-    z-index: 9;
-}
+        max-height: $parallax-window-height;
+    }
 
-.parallax-background {
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
-    background-position: top;
-    background-size: cover;
-    background-color: beige;
-    height: $parallax-background-height;
-    left: 0;
-    position: absolute;
-    top: - $parallax-window-height / 3;
-    width: 100%;
+    &-static-content {
+        @extend %ui-relative;
+
+        color: palette(default, light);
+        height: 300px;
+        z-index: 9;
+    }
+
+    &-background {
+        @extend %ui-absolute;
+        @extend %ui-full-width;
+
+        background: {
+            position: top;
+            size: cover;
+            color: palette(gray);
+            repeat: no-repeat;
+            image: url('assets/img/bg/how-features.jpg');
+        }
+        height: $parallax-background-height;
+        left: 0;
+        top: - $parallax-window-height / 3;
+    }
+
+    &-top {
+        height: 100px;
+    }
+
+    &-title {
+        @extend %ui-absolute;
+
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        > * {
+            @extend %headline-3;
+            text-transform: uppercase;
+        }
+    }
 }

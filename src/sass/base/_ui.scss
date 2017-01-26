@@ -395,7 +395,7 @@
         &-minheight {
             min-height: 100%;
 
-            &-vh { 
+            &-vh {
                 min-height: 100vh;
             }
         }
@@ -522,13 +522,6 @@
 
         &-underline {
             text-decoration: underline;
-        }
-    }
-
-    // ------------------------------------------------------------------- Font
-    &-font {
-        &-normal {
-            font-weight: normal;
         }
     }
 }

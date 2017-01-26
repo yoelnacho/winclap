@@ -33,12 +33,6 @@
                         rgba(51,195,196,0.5) 100%);
         }
 
-        [data-btn] {
-            @extend %ui-absolute;
-            top: $size-sm;
-            right: $size-sm;
-        }
-
         &-wrapper {
             @include v-align;
             @extend %ui-full-minheight-vh;
@@ -65,6 +59,14 @@
             }
         }
     }
+}
+
+.arrow-down {
+    @extend %ui-absolute;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 // Modules
