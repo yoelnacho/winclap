@@ -1,31 +1,42 @@
 # Winclap
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
+Se puede visualizar el proyecto en  [Github Pages](https://yoelnacho.github.io/winclap/).
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Consideraciones
+Considerando que el pedido no hacía referencia sobre soporte en navegadores, plataformas o dispositivos, se maquetó y programó pensando en navegadores con soporte full a javascript y css3 (por eso no se utilizaron Polyfills).
 
-## Code scaffolding
+## Consigna
+Tomando como base contenido del sitio de  winclap , debes crear un micrositio one-page que cumpla con los siguientes requisitos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+- Debe ser responsive, desarrollado con algún framework front-end ( Bootstrap ,  Foundation , etc).
+- Debe contar con al menos 3 sections y un menú de navegación que indique la sección en la que se está.
+- Deben utilizarse sólo tipografías que se utilicen en el sitio de winclap.
+- Debe utilizarse un pre-procesador de estilos CSS ( SASS ,  LESS ) usando variables (2 mínimo) y mixins (1 mínimo).
+- Deben utilizarse como mínimo 2 plugins de  jQuery .
 
-## Build
+#### Bonus
+- Instalar dependencias con bower.
+- Automatizar tareas con algún automatizador ( Gulp ,  Grunt ).
+- Respetar la identidad visual de winclap.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Entrega
+- README.md
+- github-page
+- angular2 - SPA
+- Micrositio responsive
+- Optimización de imágenes
+- Pre-procesador SASS
+- Estructura css con SMACSS
+- Nomenclatura de clases BEM (no se utilizaron ID´s o !important)
+- Utilización de Bootstrap, mediante [bootstrap-sass](https://github.com/twbs/bootstrap-sass)
+- Navegación principal con bootstrap navBar (3 secciones indicando la sección activa)
+- Instalación de dependencias con Bower.js
+- Plugin: [animate.css](https://daneden.github.io/animate.css/)
+- Plugin: [Parallax](http://pixelcog.github.io/parallax.js/)
+- Plugin: Sticky header
+- Plugin: [AOS](https://github.com/matthieua/WOW)
+- Automatizador de tareas Webpack
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Nota
+El favicon en la github-page no funciona.
