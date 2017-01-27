@@ -70,7 +70,7 @@
 
             figcaption {
                 @extend %ui-padding-sm;
-                
+
                 opacity: 0.8;
 
                 h4 {
@@ -88,6 +88,25 @@
                     font-weight: 300;
                 }
             }
+        }
+    }
+}
+
+// Sticky
+.is-sticky {
+    @extend %ui-full-width;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+
+    & + section {
+        padding-top: 90px;
+
+        @include mq('tablet', max) {
+            padding-top: 50px;
         }
     }
 }

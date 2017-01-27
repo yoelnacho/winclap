@@ -1,0 +1,33 @@
+/* -----------------------------------------------
+    Header
+-------------------------------------------------- */
+
+.m-header {
+    @extend %ui-relative;
+    @extend %overlay;
+
+    background: {
+        repeat: no-repeat;
+        color: transparent;
+        position: center top;
+        size: cover;
+    }
+
+    &:after {
+        background-color: rgba(palette(colors, turquoise), 0.78);
+    }
+
+    > header {
+        padding: {
+            top: ($size-lg * 3);
+            bottom: $size-md;
+        }
+
+        @include mq('tablet', max) {
+            padding: {
+                top: $size-lg;
+                bottom: $size-md;
+            }
+        }
+    }
+}

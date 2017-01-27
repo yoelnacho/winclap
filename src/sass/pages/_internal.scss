@@ -1,0 +1,15 @@
+/* -----------------------------------------------
+    Internal
+-------------------------------------------------- */
+
+.page-internal {
+    margin-bottom: $height-md;
+
+    [role='footer'] {
+        @extend %ui-absolute;
+        @extend %ui-full-width;
+
+        bottom: 0;
+        max-height: $height-md;
+    }
+}
