@@ -18,5 +18,9 @@
     }
 
     &-middle {
+        a.active {
+            background-color: rgba(palette(default, dark), 0.1);
+            border-radius: 15px;
+        }
     }
 }

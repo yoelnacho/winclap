@@ -23,3 +23,8 @@ a {
         outline: none;
     }
 }
+
+//
+h3 {
+    @extend %heading-3;
+}

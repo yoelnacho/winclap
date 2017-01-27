@@ -37,7 +37,9 @@
             @include v-align;
             @extend %ui-full-minheight-vh;
 
-            text-shadow: 1px 1px 1px rgba(palette(default, dark), 0.4);
+            p {
+                text-shadow: 1px 1px 1px rgba(palette(default, dark), 0.4);
+            }
         }
     }
 
@@ -61,6 +63,7 @@
     }
 }
 
+// Arrow down
 .arrow-down {
     @extend %ui-absolute;
 

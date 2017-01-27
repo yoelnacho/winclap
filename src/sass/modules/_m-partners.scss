@@ -3,15 +3,21 @@
 -------------------------------------------------- */
 
 .m-partners {
-    &-item {
+    > div {
+        @include col(1/3, $cycle: 3);
+        @extend %ui-text-center;
+        @extend %ui-margin-bottom-sm;
 
-        &-01 {}
-        &-02 {}
-        &-03 {}
-        &-04 {}
-        &-05 {}
-        &-06 {}
-        &-07 {}
-        &-08 {}
+        background-color: palette(colors, red);
+
+        > img {
+            @extend %ui-padding-vertical-md;
+
+            max-height: ($height-md * 4);
+        }
+
+        @include mq('tablet', max) {
+            @include col(1/1, $cycle: 0);
+        }
     }
 }

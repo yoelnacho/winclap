@@ -7,27 +7,27 @@
 // tertiary:  Roboto
 
 
-%headline-1,
-.headline-1 {
+%heading-1,
+.heading-1 {
     @include font-source(null, torem(60px), 500);
 }
-%headline-2,
-.headline-2 {
+%heading-2,
+.heading-2 {
     @include font-source(null, torem(48px), 500);
 }
-%headline-3,
-.headline-3 {
+%heading-3,
+.heading-3 {
     @include font-source(null, torem(38px), 500);
 }
-%headline-4,
-.headline-4 {
+%heading-4,
+.heading-4 {
     @include font-source(null, torem(24px), 300);
 }
-%headline-5,
-.headline-5 {
+%heading-5,
+.heading-5 {
     @include font-source(null, torem(18px), 300);
 }
-%headline-6,
-.headline-6 {
+%heading-6,
+.heading-6 {
     @include font-source(null, $font-base-size, 300);
 }

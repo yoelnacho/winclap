@@ -12,8 +12,8 @@ export class RotateComponent implements AfterViewInit {
 
     ngAfterViewInit() {
         $(".js-rotate").textrotator({
-            animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-            speed: 1750 // How many milliseconds until the next word show.
+            animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+            speed: 3500 // How many milliseconds until the next word show.
         });
     }
 }

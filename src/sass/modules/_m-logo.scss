@@ -10,7 +10,9 @@
     }
 
     &--big {
-        @extend %ui-margin-vertical-sm;
+        @extend %ui-margin-auto;
+        @extend %ui-margin-top-sm;
+        @extend %ui-margin-none-bottom;
 
         max-width: 360px;
     }

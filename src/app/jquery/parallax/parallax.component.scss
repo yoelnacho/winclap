@@ -49,7 +49,7 @@ $parallax-background-height: $parallax-window-height * 2;
         right: 0;
 
         > * {
-            @extend %headline-3;
+            @extend %heading-3;
             text-transform: uppercase;
         }
     }

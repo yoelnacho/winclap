@@ -3,9 +3,10 @@
 -------------------------------------------------- */
 
 .m-rotate {
-    @extend %headline-3;
+    @extend %heading-3;
 
     span {
+        font-size: torem(32px);
         text-transform: uppercase;
     }
 }
