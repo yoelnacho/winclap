@@ -16,11 +16,13 @@
       "mobile": false,
       "styles": [
           "../bower_components/animate.css/animate.css",
+          "../bower_components/aos/dist/aos.css",
           "styles.scss"
       ],
       "scripts": [
           "../bower_components/jquery/dist/jquery.js",
           "../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js",
+          "../bower_components/aos/dist/aos.js",
           "../src/assets/vendor/rotator.min.js"
       ],
       "environments": {

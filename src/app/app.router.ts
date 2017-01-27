@@ -10,8 +10,7 @@ export const router: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: 'home', component: HomeComponent },
     { path: 'how', component: HowComponent },
-    { path: 'performance', component: PerformanceComponent },
-    { path: '**', redirectTo: '/404', pathMatch: 'full' } // Error
+    { path: 'performance', component: PerformanceComponent }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

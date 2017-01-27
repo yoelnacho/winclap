@@ -3,8 +3,8 @@
 -------------------------------------------------- */
 
 [role="banner"] {
-    @extend %ui-absolute;
     @extend %ui-full-width;
 
+    position: fixed;
     z-index: $z-sm;
 }

@@ -3,10 +3,19 @@
 -------------------------------------------------- */
 
 .m-rotate {
-    @extend %heading-3;
+    &:before {
+        content: '[ ';
+        font-weight: 100;
+    }
+
+    &:after {
+        content: ' ]';
+        font-weight: 100;
+    }
 
     span {
-        font-size: torem(32px);
+        @include font-source(null, torem(32px), 500);
+
         text-transform: uppercase;
     }
 }

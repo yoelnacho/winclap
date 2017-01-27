@@ -9,7 +9,11 @@
 
 %heading-1,
 .heading-1 {
-    @include font-source(null, torem(60px), 500);
+    @include font-source($font-secondary, torem(60px), 700);
+
+    @include mq('phone', max) {
+        @include font-source($font-secondary, torem(50px), 700);
+    }
 }
 %heading-2,
 .heading-2 {
@@ -30,4 +34,18 @@
 %heading-6,
 .heading-6 {
     @include font-source(null, $font-base-size, 300);
+}
+
+// Heading
+h1 {
+    @extend %heading-1;
+}
+h2 {
+    @extend %heading-2;
+}
+h3 {
+    @extend %heading-3;
+}
+h4 {
+    @extend %heading-4;
 }

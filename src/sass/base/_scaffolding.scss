@@ -18,13 +18,37 @@ body {
     }
 }
 
-a {
+a, button {
     &, &:hover {
         outline: none;
     }
 }
 
-//
-h3 {
-    @extend %heading-3;
+hr {
+    @extend %ui-margin-vertical-md;
+}
+
+// bootstrap
+.navbar {
+    margin-bottom: 0;
+
+    &-default {
+        .navbar-nav {
+            > li {
+                > a.active {
+                    border-radius: 15px;
+                    &,
+                    &:hover,
+                    &:focus {
+                        background-color: rgba(palette(default, dark), 0.1);
+                        color: rgba(palette(gray, light), 0.7);
+                    }
+
+                    @include mq('tablet', max) {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
 }

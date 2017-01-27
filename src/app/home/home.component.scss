@@ -33,6 +33,13 @@
                         rgba(51,195,196,0.5) 100%);
         }
 
+        [data-btn] {
+            @extend %ui-absolute;
+
+            top: $size-xs;
+            right: $size-xs;
+        }
+
         &-wrapper {
             @include v-align;
             @extend %ui-full-minheight-vh;
@@ -54,9 +61,31 @@
                 @extend %ui-absolute;
                 @extend %ui-absolute-full;
 
-                > img {
-                    @include vertical-align;
-                    @extend %ui-full-maxwidth;
+            }
+
+            img {
+                @include vertical-align;
+                @extend %ui-full-maxwidth;
+            }
+
+            figcaption {
+                @extend %ui-padding-sm;
+                
+                opacity: 0.8;
+
+                h4 {
+                    @extend %ui-padding-horizontal-xs;
+
+                    border-left: 3px solid palette(colors, red);
+                    font-weight: 500;
+                    padding: {
+                        top: 5px;
+                        bottom: 5px;
+                    }
+                }
+
+                p {
+                    font-weight: 300;
                 }
             }
         }
@@ -70,11 +99,4 @@
     bottom: 0;
     right: 0;
     left: 0;
-}
-
-// Modules
-canvas {
-    width: 100%;
-    height: auto;
-    max-width: 850px;
 }

@@ -10,17 +10,8 @@
     }
 
     &-top {
-        @extend %ui-text-right;
-
-        @include mq('tablet', max) {
-            text-align: center;
-        }
+        border-radius: 0;
     }
 
-    &-middle {
-        a.active {
-            background-color: rgba(palette(default, dark), 0.1);
-            border-radius: 15px;
-        }
-    }
+    &-middle {}
 }

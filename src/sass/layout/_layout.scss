@@ -7,7 +7,7 @@
     @extend %ui-overflow;
 
     &:not([data-layout~="no-margin"]) {
-        @include center(breakpoint('desktop'), $size-xs);
+        @include center(breakpoint('desktop'), 15px);
     }
 }
 

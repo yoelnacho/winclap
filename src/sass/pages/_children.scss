@@ -1,0 +1,19 @@
+/* -----------------------------------------------
+    Children
+-------------------------------------------------- */
+
+.page-child {
+    > header {
+        padding: {
+            top: ($size-lg * 2);
+            bottom: $size-lg;
+        }
+
+        @include mq('tablet', max) {
+            padding: {
+                top: $size-lg;
+                bottom: $size-md;
+            }
+        }
+    }
+}
