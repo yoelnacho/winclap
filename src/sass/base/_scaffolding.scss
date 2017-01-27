@@ -28,6 +28,31 @@ hr {
     @extend %ui-margin-vertical-md;
 }
 
+blockquote {
+    @extend %ui-margin-none;
+    @extend %ui-padding-horizontal-md;
+    @extend %ui-padding-none-vertical;
+
+    border: none;
+    color: palette(default, light);
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 1.45;
+    position: relative;
+
+    &:before {
+        display: block;
+        color: palette(default, light);
+        content: "\201C";
+        font-size: 80px;
+        left: -5px;
+        opacity: 0.5;
+        position: absolute;
+        top: -($size-sm);
+    }
+}
+
 // bootstrap
 .navbar {
     margin-bottom: 0;

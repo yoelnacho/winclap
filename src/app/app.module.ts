@@ -10,6 +10,7 @@ import { routes } from './app.router';
 import { JqueryComponent } from './jquery/jquery/jquery.component';
 import { RotateComponent } from './jquery/rotate/rotate.component';
 import { ParallaxComponent } from './jquery/parallax/parallax.component';
+import { Parallax2Component } from './jquery/parallax2/parallax2.component';
 
 // Pages
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { PerformanceComponent } from './performance/performance.component';
     JqueryComponent,
     RotateComponent,
     ParallaxComponent,
+    Parallax2Component,
     HowComponent,
     PerformanceComponent
   ],

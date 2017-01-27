@@ -12,10 +12,7 @@
         position: center top;
         size: cover;
     }
-
-    &:after {
-        background-color: rgba(palette(colors, turquoise), 0.78);
-    }
+    min-height: 454px;
 
     > header {
         padding: {

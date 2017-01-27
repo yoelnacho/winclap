@@ -3,9 +3,9 @@ declare var AOS: any;
 declare var $: any;
 
 @Component({
-  selector: 'app-how',
-  templateUrl: './how.component.html',
-  styleUrls: ['./how.component.scss']
+    selector: 'app-how',
+    templateUrl: './how.component.html',
+    styleUrls: ['./how.component.scss']
 })
 export class HowComponent implements OnInit {
     title: string;
@@ -20,7 +20,7 @@ export class HowComponent implements OnInit {
         AOS.init({
             duration: 1200,
         });
-        
+
         $(window).scrollTop(0);
         $('[role="banner"]').show();
         $('body').addClass('page-internal');

@@ -12,4 +12,12 @@
 
 .m-header {
     background-image: url('assets/img/bg/performance.jpg');
+
+    &:after {
+        background-color: rgba(palette(colors, turquoise), 0.78);
+    }
+}
+
+hr {
+    border-top-color: rgba(palette(colors, turquoise), 0.25);
 }

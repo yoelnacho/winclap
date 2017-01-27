@@ -1,0 +1,22 @@
+/* -----------------------------------------------
+    Performance
+-------------------------------------------------- */
+@import "../../sass/config/common";
+
+.how {
+    &-img {
+        @extend %ui-full-maxwidth;
+    }
+}
+
+.m-header {
+    background-image: url('assets/img/bg/home-header.jpg');
+
+    &:after {
+        background-color: rgba(palette(colors, orange), 0.78);
+    }
+}
+
+hr {
+    border-top-color: rgba(palette(colors, orange), 0.25);
+}

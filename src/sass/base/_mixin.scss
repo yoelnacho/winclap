@@ -9,38 +9,6 @@
     white-space: nowrap;
 }
 
-// Small
-@mixin small($size) {
-    font-size: ($size - 2);
-}
-
-//Link colors
-@mixin link($color, $hover, $underline: false) {
-    color: $color;
-
-    @if $underline {
-        text-decoration: underline;
-    } @else {
-        text-decoration: none;
-    }
-
-    &:hover,
-    &:focus,
-    &:active:focus {
-        color: $hover;
-    }
-}
-
-
-// Truncate by lines
-// How to use @include tuncate-line(2);
-@mixin tuncate-line($value) {
-    display: -webkit-box;
-    -webkit-line-clamp: $value;
-    -webkit-box-orient: vertical;
-    white-space: normal;
-}
-
 // V-align
 @mixin v-align(){
     display: table;
@@ -62,14 +30,6 @@
     top: 50%;
 }
 
-// Example @include calc(width, "100% - 60px")
-// Example with vars: @include calc(width, "100% - " ($space-medium * 2));
-@mixin calc($property, $expression) {
-    #{$property}: -moz-calc(#{$expression});
-    #{$property}: -webkit-calc(#{$expression});
-    #{$property}: calc(#{$expression});
-}
-
 // mediaqueries
 @mixin mq($width, $type: min) {
     @if map_has_key($breakpoints, $width) {
@@ -81,13 +41,6 @@
         @media only screen and (#{$type}-width: $width) {
             @content;
         }
-    }
-}
-
-// Orientation
-@mixin orientation($orientation: landscape) {
-    @media (orientation: $orientation) {
-        @content;
     }
 }
 
@@ -118,20 +71,4 @@
     @if $weight { font-weight: $weight; }
     @if $lh { line-height: $lh; }
     @if $colour { color: $colour; }
-}
-
-// Placeholder
-@mixin placeholder($size) {
-    &:-moz-placeholder {
-        font-size: $size;
-    }
-    &:-ms-input-placeholder {
-        font-size: $size;
-    }
-    &::-webkit-input-placeholder {
-        font-size: $size;
-    }
-    &::-moz-placeholder {
-        font-size: $size;
-    }
 }

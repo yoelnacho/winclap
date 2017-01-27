@@ -36,8 +36,14 @@
         [data-btn] {
             @extend %ui-absolute;
 
-            top: $size-xs;
-            right: $size-xs;
+            top: ($size-xs + 5);
+            right: ($size-xs + 5);
+
+            @include mq('tablet', max) {
+                @include transform(translateX(-50%));
+                
+                left: 50%;
+            }
         }
 
         &-wrapper {

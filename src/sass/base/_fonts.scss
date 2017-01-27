@@ -33,7 +33,7 @@
 }
 %heading-6,
 .heading-6 {
-    @include font-source(null, $font-base-size, 300);
+    @include font-source(null, $font-base-size, 100);
 }
 
 // Heading
@@ -48,4 +48,7 @@ h3 {
 }
 h4 {
     @extend %heading-4;
+}
+p {
+    @extend %heading-6;
 }
